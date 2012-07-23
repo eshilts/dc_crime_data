@@ -1,0 +1,11 @@
+.Rdata
+*~
+*.swp
+*.bck
+*.idea
+.Rhistory
+man
+NAMESPACE
+*.Rcheck
+*.tar.gz
+out/*
