@@ -9,10 +9,13 @@ A package with DC's crime data from 2006-01-01 through 2012-07-17.
         git clone git://github.com/eshilts/dc_crime_data.git
 
 1. Build and install
+
         cd dc_crime_data
         bin/build.sh
         R CMD INSTALL dccrimedata_0.1.tar.gz # version number may be off
+
 1. Load and use
+
         library(dccrimedata) 
         crime_data <- load_crime_data_by_ward()
 
