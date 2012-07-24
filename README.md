@@ -2,4 +2,9 @@
 
 A package with DC's crime data from 2006-01-01 through 2012-07-17.
 
-![DC Flag](https://github.com/eshilts/dc_crime_data/blob/master/misc/dc_flag.gif "DC Flag")
+## Usage
+    bin/build.sh
+    R CMD INSTALL dccrimedata_0.1.tar.gz
+    library(dccrimedata) 
+    load_crime_data_by_ward()
+
