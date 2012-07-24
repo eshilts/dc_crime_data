@@ -14,10 +14,8 @@ load_crime_data_by_ward <- function() {
 
   combined_data <- data.frame()
 
-  for(ward_file in ward_files) {
-    print(ward_file)
+  for(ward_file in ward_files)
     combined_data <- rbind(combined_data, load_ward_data(ward_file))
-  }
 
   combined_data
 }
