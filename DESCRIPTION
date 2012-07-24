@@ -2,7 +2,7 @@ Package: dccrimedata
 Title: An R package containing DC crime data.
 Description: Crime data from DC from 2006 to mid-2012
 Version: 0.1
-License: file LICENSE
+License: GPL-3
 Author: erik.shilts
 Maintainer: <erik.shilts@opower.com>
 Depends:

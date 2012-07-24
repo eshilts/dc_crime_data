@@ -6,8 +6,18 @@
 #' @aliases dc_crime_data
 #' @docType package
 #' @title DC crime data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords package
+NULL
+
+#' Sample DC Crime Data
+#'
+#' Sample of 100 crime records from the full Ward 1-8 dataset. Sampled from data through 2012-07-17
+#'
+#' @name dc_crime_data_sample
+#' @docType data
+#' @author Erk Shilts \email{erik_shilts@@gmail.com}
+#' @keywords data
 NULL
 
 #' Ward 1 Crime Data
@@ -16,7 +26,7 @@ NULL
 #'
 #' @name ward1
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -26,7 +36,7 @@ NULL
 #'
 #' @name ward2
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -36,7 +46,7 @@ NULL
 #'
 #' @name ward3
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -46,7 +56,7 @@ NULL
 #'
 #' @name ward4
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -56,7 +66,7 @@ NULL
 #'
 #' @name ward5
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -66,7 +76,7 @@ NULL
 #'
 #' @name ward6
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -76,7 +86,7 @@ NULL
 #'
 #' @name ward7
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
 
@@ -86,6 +96,6 @@ NULL
 #'
 #' @name ward8
 #' @docType data
-#' @author Erik Shilts \email{erik_shilts@@opower.com}
+#' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data
 NULL
