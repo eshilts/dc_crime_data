@@ -15,6 +15,15 @@ You can find crime definitions [here] [crime_data_definitions] .
 
 I include a data dictionary in the form of a csv file. This will need to be updated because it currently mixes variables definitions and variable value definitions.
 
+#### Cleaning the data
+
+* 105 XBLOCK coordinates from Ward 5 have XBLOCK coordinates that are two orders of magnitude off.
+** `crime_dat$XBLOCK[crime_dat$XBLOCK > 40000000] <- crime_dat$XBLOCK[crime_dat$XBLOCK > 40000000] / 100`
+* 2 YBLOCK coordinates are an order of magnitude off
+** 1423925.0 is divided by 10
+** 1742951.8 is divided by 10 and the first two digits are transposed
+* Several others are too low, need to investigate
+
 #### Map coordinates
 
 Location is approximated to the center of the street block. Values are in the Maryland State Plane meters NAD 83 map projection.
