@@ -2,7 +2,32 @@
 
 A package with DC's crime data from 2006-01-01 through 2012-07-17.
 
-## Installation instructions
+## About the data
+
+### Data history
+
+Last updated:  2012-07-17
+Earliest data: 2006-01-01
+
+### Data dictionary
+
+You can find crime definitions [here] [crime_data_definitions] .
+
+I include a data dictionary in the form of a csv file. This will need to be updated because it currently mixes variables definitions and variable value definitions.
+
+#### Map coordinates
+
+Location is approximated to the center of the street block. Values are in the Maryland State Plane meters NAD 83 map projection.
+
+#### Sexual assault disclaimer
+
+Sexual assualt data is not available before 2009.
+
+## Setup
+
+Setup instructions to get the data or update the package.
+
+### Installation instructions
 
 1. Download from github:
 
@@ -19,7 +44,7 @@ A package with DC's crime data from 2006-01-01 through 2012-07-17.
         library(dccrimedata) 
         crime_data <- load_crime_data_by_ward()
 
-## Updating crime data
+### Updating crime data
 
 1. Visit the [DC crime data search] [crime_data_search] page
 1. Select Other Geographic Area or Point
@@ -34,4 +59,5 @@ A package with DC's crime data from 2006-01-01 through 2012-07-17.
 1. Save the resulting file as wardX.csv in the data directory.
 
 
-[crime_data_search]: http://crimemap.dc.gov/CrimeMapSearch.aspx "DC Crime Data Searchable Site"
+[crime_data_search]: http://crimemap.dc.gov/CrimeMapSearch.aspx "DC crime data searchable site"
+[crime_data_definitions]: http://crimemap.dc.gov/CrimeDefinitions.aspx "DC crime data definitions"
