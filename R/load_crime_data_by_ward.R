@@ -2,10 +2,12 @@
 #'
 #' Loads crime data by ward
 #'
+#' @param clean_data should the data be cleaned? If not, messy data are dropped.
 #' @export
 #' @examples
-#' dc_crime_data <- load_crime_data_by_ward()
-load_crime_data_by_ward <- function() {
+#' dc_crime_data <- load_crime_data_by_ward(clean_data=TRUE)
+#' dc_crime_data <- load_crime_data_by_ward(clean_data=FALSE)
+load_crime_data_by_ward <- function(clean_data=TRUE) {
   ward_files <- grep('ward', list.files(path=system.file(package='dccrimedata', 'data'), full.names=TRUE), 
                      ignore.case=TRUE, value=TRUE)
 
@@ -16,6 +18,10 @@ load_crime_data_by_ward <- function() {
 
   for(ward_file in ward_files)
     combined_data <- rbind(combined_data, load_ward_data(ward_file))
+
+  combined_data <- clean_crime_data(combined_data, clean_data)
+
+  combined_data <- calculate_latitude_longitude(combined_data)
 
   combined_data
 }

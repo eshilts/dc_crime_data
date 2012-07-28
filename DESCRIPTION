@@ -6,7 +6,7 @@ License: GPL-3
 Author: erik.shilts
 Maintainer: <erik.shilts@opower.com>
 Depends:
-    
+    rgdal,sp
 Collate:
     'dc_crime_data-package.R'
     'load_crime_data_by_ward.R'
