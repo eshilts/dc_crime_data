@@ -20,5 +20,5 @@ clean_crime_data <- function(crime_data, clean_data) {
     crime_data$record_cleaned <- NULL
   }
 
-  clean_data
+  crime_data
 }

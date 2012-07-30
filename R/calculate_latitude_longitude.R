@@ -9,11 +9,13 @@
 #' @return data.frame with two additional columns, latitude and longitude, with units in the standard GPS format
 #' @export
 calculate_latitude_longitude <- function(crime_data) {
-  xy_coords <- crime_data[c('XBLOCK', 'YBLOCK')]
+  xy_coords <- crime_data[, c('XBLOCK', 'YBLOCK')]
 
-  coordinates(xy_coords) <- names(xy_coords)
+  coordinates(xy_coords) <- c('XBLOCK', 'YBLOCK')
   proj4string(xy_coords) <- CRS("+init=esri:102285") # NAD83, maryland state plane, units in meters
   xy_coords <- spTransform(xy_coords, CRS("+init=epsg:4326")) # Latitude and longitude for GPS
+
+  xy_coords <- as.data.frame(xy_coords)
   names(xy_coords) <- c('longitude', 'latitude')
 
   crime_data <- cbind(crime_data, xy_coords)
