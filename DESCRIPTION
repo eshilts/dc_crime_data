@@ -8,10 +8,12 @@ Maintainer: <erik.shilts@opower.com>
 Depends:
     rgdal,sp
 Collate:
-    'calculate_latitude_longitude.R'
+    'a_test_function.R'
+    'calculate_latitude_and_longitude.R'
     'clean_coordinates_XBLOCK.R'
     'clean_coordinates_YBLOCK.R'
     'clean_coordinates.R'
     'clean_crime_data.R'
     'dc_crime_data-package.R'
     'load_crime_data_by_ward.R'
+    'test_function.R'
