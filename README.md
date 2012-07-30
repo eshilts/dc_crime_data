@@ -18,7 +18,9 @@ I include a data dictionary in the form of a csv file. This will need to be upda
 #### Cleaning the data
 
 * 105 XBLOCK coordinates from Ward 5 have XBLOCK coordinates that are two orders of magnitude off.
-** `crime_dat$XBLOCK[crime_dat$XBLOCK > 40000000] <- crime_dat$XBLOCK[crime_dat$XBLOCK > 40000000] / 100`
+** `crime_data$XBLOCK[crime_data$XBLOCK > 40000000] <- crime_data$XBLOCK[crime_data$XBLOCK > 40000000] / 100`
+* 49 XBLOCK coordinates appear to be an order of magnitude too low (39k-40k)
+** `crime_data$XBLOCK[crime_data$XBLOCK > 39000 & crime_data$XBLOCK < 41000] <- crime_data$XBLOCK[crime_data$XBLOCK > 39000 & crime_data$XBLOCK < 41000] * 10`
 * 2 YBLOCK coordinates are an order of magnitude off
 ** 1423925.0 is divided by 10
 ** 1742951.8 is divided by 10 and the first two digits are transposed
