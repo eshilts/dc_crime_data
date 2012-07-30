@@ -2,8 +2,8 @@
 #' 
 #' DC crime data downloaded by ward.
 #' 
-#' @name dc_crime_data-package
-#' @aliases dc_crime_data
+#' @name dccrimedata-package
+#' @aliases dccrimedata
 #' @docType package
 #' @title DC crime data
 #' @author Erik Shilts \email{erik_shilts@@gmail.com}
