@@ -21,7 +21,7 @@ load_crime_data_by_ward <- function(clean_data=TRUE) {
 
   combined_data <- clean_crime_data(combined_data, clean_data)
 
-  combined_data <- calculate_latitude_longitude(combined_data)
+  combined_data <- convert_nad83_to_latitude_and_longitude(combined_data)
 
   combined_data
 }
