@@ -1,5 +1,5 @@
-.git
-.Rhistory
-.Rcheck
+^\.git
+^\.Rhistory
+\.Rcheck
 \.tar\.gz$
 out
