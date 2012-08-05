@@ -19,9 +19,9 @@ h4. Cleaning the data
 
 * XBLOCK coordinates
 ** 105 XBLOCK coordinates from Ward 5 have XBLOCK coordinates that are two orders of magnitude off.
-*** `crime_data$XBLOCK[crime_data$XBLOCK > 40000000] <- crime_data$XBLOCK[crime_data$XBLOCK > 40000000] / 100`
+*** @crime_data$XBLOCK[crime_data$XBLOCK > 40000000] <- crime_data$XBLOCK[crime_data$XBLOCK > 40000000] / 100@
 ** 49 XBLOCK coordinates appear to be an order of magnitude too low (39k-40k)
-*** `crime_data$XBLOCK[crime_data$XBLOCK > 39000 & crime_data$XBLOCK < 41000] <- crime_data$XBLOCK[crime_data$XBLOCK > 39000 & crime_data$XBLOCK < 41000] * 10`
+*** @crime_data$XBLOCK[crime_data$XBLOCK > 39000 & crime_data$XBLOCK < 41000] <- crime_data$XBLOCK[crime_data$XBLOCK > 39000 & crime_data$XBLOCK < 41000] * 10@
 * YBLOCK coordinates
 ** 2 YBLOCK coordinates are an order of magnitude too high
 *** 1423925.0 is divided by 10
