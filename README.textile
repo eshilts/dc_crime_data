@@ -30,32 +30,27 @@ h4. Cleaning the data
 * CCN
 ** 79 CCN values are missing. No other variables have any missing values.
 
-#### Map coordinates
+h4. Map coordinates
 
 Location is approximated to the center of the street block. Values are in the Maryland State Plane meters NAD 83 map projection.
 
-#### Sexual assault disclaimer
+h4. Sexual assault disclaimer
 
 Sexual assualt data is not available before 2009.
 
-## Setup
+h2. Setup
 
 Setup instructions to get the data or update the package.
 
-### Installation instructions
+h3. Installation instructions
 
 # Download from github:
-
-@git clone git://github.com/eshilts/dc_crime_data.git@
-
+## @git clone git://github.com/eshilts/dc_crime_data.git@
 # Build and install
-
 bq. cd dc_crime_data
 bin/build.sh
 R CMD INSTALL dccrimedata_0.1.tar.gz # version number may be off
-
 # Load and use
-
 bq. library(dccrimedata) 
 crime_data <- load_crime_data_by_ward()
 
@@ -72,7 +67,6 @@ h3. Updating crime data
 # Click the red _Check all_ link
 # Click the _Get Data_ button
 # Save the resulting file as wardX.csv in the data directory.
-
 
 [crime_data_search]http://crimemap.dc.gov/CrimeMapSearch.aspx
 [crime_data_definitions]http://crimemap.dc.gov/CrimeDefinitions.aspx
