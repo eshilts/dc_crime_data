@@ -4,7 +4,7 @@ Description: Crime data from DC from 2006 to mid-2012
 Version: 0.1
 License: GPL-3
 Author: erik.shilts
-Maintainer: <erik.shilts@opower.com>
+Maintainer: <erik.shilts@gmail.com>
 Depends:
     rgdal,sp
 Collate:
@@ -16,3 +16,4 @@ Collate:
     'dccrimedata-package.R'
     'convert_nad83_to_latitude_and_longitude.R'
     'create_date_variables.R'
+LazyData: yes

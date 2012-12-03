@@ -12,7 +12,7 @@ NULL
 
 #' Sample DC Crime Data
 #'
-#' Sample of 100 crime records from the full Ward 1-8 dataset. Sampled from data through 2012-07-17
+#' Sample of 1000 crime records from the full Ward 1-8 dataset. Sampled from data through 2012-07-17
 #'
 #' @name dc_crime_data_sample
 #' @docType data

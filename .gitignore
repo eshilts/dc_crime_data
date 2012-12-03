@@ -9,3 +9,4 @@ NAMESPACE
 *.Rcheck
 *.tar.gz
 out/*
+ggmapTemp.png
