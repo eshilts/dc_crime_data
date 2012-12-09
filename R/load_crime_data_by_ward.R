@@ -6,7 +6,9 @@
 #' @export
 #' @examples
 #' dc_crime_data <- load_crime_data_by_ward(clean_data=TRUE)
+#' stopifnot(nrow(dc_crime_data) > 1)
 #' dc_crime_data <- load_crime_data_by_ward(clean_data=FALSE)
+#' stopifnot(nrow(dc_crime_data) > 1)
 load_crime_data_by_ward <- function(clean_data=TRUE) {
   ward_files <- grep('ward', list.files(path=system.file(package='dccrimedata', 'data'), full.names=TRUE), 
                      ignore.case=TRUE, value=TRUE)

@@ -85,62 +85,6 @@ NULL
 #' Crime data from Ward 6
 #'
 #' @name ward6
-
-#' Ward 1 Crime Data
-#'
-#' Crime data from Ward 1
-#'
-#' @name ward1
-#' @docType data
-#' @author Erik Shilts \email{erik_shilts@@gmail.com}
-#' @keywords data
-NULL
-
-#' Ward 2 Crime Data
-#'
-#' Crime data from Ward 2
-#'
-#' @name ward2
-#' @docType data
-#' @author Erik Shilts \email{erik_shilts@@gmail.com}
-#' @keywords data
-NULL
-
-#' Ward 3 Crime Data
-#'
-#' Crime data from Ward 3
-#'
-#' @name ward3
-#' @docType data
-#' @author Erik Shilts \email{erik_shilts@@gmail.com}
-#' @keywords data
-NULL
-
-#' Ward 4 Crime Data
-#'
-#' Crime data from Ward 4
-#'
-#' @name ward4
-#' @docType data
-#' @author Erik Shilts \email{erik_shilts@@gmail.com}
-#' @keywords data
-NULL
-
-#' Ward 5 Crime Data
-#'
-#' Crime data from Ward 5
-#'
-#' @name ward5
-#' @docType data
-#' @author Erik Shilts \email{erik_shilts@@gmail.com}
-#' @keywords data
-NULL
-
-#' Ward 6 Crime Data
-#'
-#' Crime data from Ward 6
-#'
-#' @name ward6
 #' @docType data
 #' @author Erik Shilts \email{erik_shilts@@gmail.com}
 #' @keywords data

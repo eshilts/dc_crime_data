@@ -16,4 +16,3 @@ Collate:
     'dccrimedata-package.R'
     'convert_nad83_to_latitude_and_longitude.R'
     'create_date_variables.R'
-LazyData: yes
