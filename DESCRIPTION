@@ -6,7 +6,9 @@ License: GPL-3
 Author: erik.shilts
 Maintainer: <erik.shilts@gmail.com>
 Depends:
-    rgdal,sp
+    rgdal,
+    sp,
+    handysmurf
 Collate:
     'clean_coordinates_XBLOCK.R'
     'clean_coordinates_YBLOCK.R'
@@ -16,3 +18,5 @@ Collate:
     'dccrimedata-package.R'
     'convert_nad83_to_latitude_and_longitude.R'
     'create_date_variables.R'
+    'create_crime_categories.R'
+    'create_pretty_labels.R'

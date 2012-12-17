@@ -12,6 +12,7 @@ create_date_variables <- function(crime_data) {
   crime_data$quarter <- as.character(ceiling(as.integer(format(crime_data$date, '%m')) / 3))
 
   crime_data$year_month <- sprintf("%s-%s", crime_data$year, format(crime_data$date, '%b'))
+  crime_data$year_month_date <- as.Date(format(crime_data$date, '%Y-%m-01'))
   crime_data$year_quarter <- sprintf("%s-Q%s", crime_data$year, crime_data$quarter)
 
   crime_data
